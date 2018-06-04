@@ -40,6 +40,7 @@ object Exploration extends App {
 
   val columns = Vector("CRIM", "ZN", "INDUS", "CHAS", "NOX", "RM", "AGE", "DIS", "RAD", "TAX", "PTRATIO", "B", "LSTAT", "MEDV")
 
+  println(fr)
   val ys = for (y <- fr.colAt(13).toSeq) yield y._2
 
   println(ys)
